@@ -1,26 +1,28 @@
+html {
+  scroll-behavior: smooth; 
+}
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 200%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-shine-effect {
+  position: absolute;
+  top: 0;
+  width: 10px; /* Un haz de luz más definido */
+  height: 85%;
+  /* Blanco sólido para que sea imposible no verlo */
+  background: rgb(235, 177, 20); 
+  /* Difuminamos un poco los bordes */
+  box-shadow: 0 0 15px 5px rgb(151, 114, 114);
+  transform: skewX(-25deg);
+  /* 2 segundos para que lo veas pasar lento */
+  animation: shine 4s infinite linear;
+  z-index: 5; 
+  opacity: 0.8;
 }
