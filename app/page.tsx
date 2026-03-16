@@ -22,14 +22,21 @@ export default function Home() {
            className="text-xl font-black tracking-tighter text-slate-950 hover:text-blue-600 transition-colors">
             OCIOSOS<span className="text-blue-600"></span>
             </a>
-
           
 
           {/* Enlaces de navegación */}
           <div className="flex items-center gap-6">
-            <Link href="/#inicio" className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
+            <Link 
+            href="/#inicio" 
+            onClick={() => {
+              if (window.location.pathname === '/') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }}
+            className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
               Inicio
             </Link>
+            
             <a href="#suscripcion" className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
               Newsletter
             </a>
