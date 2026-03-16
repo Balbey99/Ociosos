@@ -27,7 +27,7 @@ export default function Home() {
 
           {/* Enlaces de navegación */}
           <div className="flex items-center gap-6">
-            <Link href="#inicio" className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
+            <Link href="/#inicio" className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
               Inicio
             </Link>
             <a href="#suscripcion" className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
@@ -48,7 +48,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto py-15 px-5">
 
         {/* Banner principal */}
-        <section id="inicio" className="relative w-full h-[100px] md:h-[350px] overflow-hidden rounded-4xl mb-12 shadow-10xl">
+        <section id="inicio" className="relative w-full h-[100px] md:h-[350px] overflow-hidden rounded-4xl mb-12 shadow-10xl scroll mt-20">
           <Image
             src="/Ociosos.png"
             alt="Banner del blog"
