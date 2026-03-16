@@ -27,7 +27,7 @@ export default function Home() {
 
           {/* Enlaces de navegación */}
           <div className="flex items-center gap-6">
-            <Link href="http://localhost:3000/" className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
+            <Link href="#inicio" className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
               Inicio
             </Link>
             <a href="#suscripcion" className="text-sm font-bold text-slate-600 hover:text-slate-950 transition-colors">
