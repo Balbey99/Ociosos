@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronLeft } from "lucide-react";
+import type { Metadata } from "next";
 
 {/* Metadata dinámico para cada post */ }
 export async function generateMetadata({ 
